@@ -40,3 +40,4 @@ Feel free to contribute to this project by submitting issues or pull requests. Y
 ## License
 
 This project is open-source and available under the MIT License.
+
