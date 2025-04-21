@@ -5,7 +5,7 @@ Welcome to the Bjorn Cyber Viking website! This project serves as a directory fo
 ## Project Structure
 
 ```
-bjorn-cyber-viking-website
+Root
 ├── index.html          # Main HTML document for the website
 ├── assets
 │   ├── css
