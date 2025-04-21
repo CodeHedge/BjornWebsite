@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #050f13;
     color: #333;
 }
 
@@ -22,7 +22,7 @@ body {
 
 /* Header styles */
 header {
-    background: #35424a;
+    background: transparent;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -50,6 +50,7 @@ header {
 .social-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center; /* Center the icon and text horizontally */
     font-size: 18px;
     color: #ffffff;
     background-color: #007bff;
@@ -102,11 +103,65 @@ header {
 
 /* Footer styles */
 footer {
-    background: #35424a;
+    background: #050f13;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100; /* ensures footer is above other content if overlapping */
+}
+
+section h2 {
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    body {
+        background: #050f13 url("../images/portraitViking.png") no-repeat center center;
+        background-size: cover;
+    }
+    
+    section {
+        padding: 0 10%; /* Adds margins so content is not flush with the screen edge */
+    }
+    
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .social-button {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* PC Styles */
+@media only screen and (min-width: 769px) {
+    body {
+        background: #050f13 url("../images/landscapeViking.png") no-repeat center center;
+        background-size: cover;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .social-button {
+        flex: 1;
+        max-width: 220px;
+        margin: 0 10px;
+        text-align: center;
+    }
 }
