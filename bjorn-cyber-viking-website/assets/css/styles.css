@@ -46,6 +46,54 @@ header {
     background: #0056b3;
 }
 
+/* Social Button styles */
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.social-button i {
+    margin-right: 8px;
+}
+
+.social-button:hover {
+    background-color: #0056b3;
+}
+
+/* Optionally, customize button colors for each community */
+.social-button.discord {
+    background-color: #7289da;
+}
+
+.social-button.discord:hover {
+    background-color: #5b6eae;
+}
+
+.social-button.reddit {
+    background-color: #ff4500;
+}
+
+.social-button.reddit:hover {
+    background-color: #d73a00;
+}
+
+.social-button.github {
+    background-color: #24292e;
+}
+
+.social-button.github:hover {
+    background-color: #1b1f23;
+}
+
 /* AdSense section */
 .adsense {
     margin: 20px 0;
