@@ -47,60 +47,209 @@
     <div class="section-divider"></div>
 
     <main>
-        <section id="network-scanning" class="section">
+        <!-- Tutorial Overview Section -->
+        <section class="section">
             <div class="container">
-                <h2>Getting Started with Network Scanning</h2>
-                <div class="tutorial-content">
-                    <div class="tutorial-intro">
-                        <p>Network scanning is the foundation of cybersecurity assessment. Learn how to identify live hosts, open ports, and running services on your network.</p>
-                    </div>
+                <div class="tutorial-overview">
+                    <h2>Learning Path Overview</h2>
+                    <p>Our comprehensive tutorials are designed to take you from beginner to advanced practitioner. Each section builds upon the previous, creating a structured learning experience.</p>
                     
-                    <div class="tutorial-steps">
-                        <div class="step">
-                            <h3>1. Understanding Network Discovery</h3>
+                    <div class="learning-path">
+                        <div class="path-item">
+                            <div class="path-number">1</div>
+                            <div class="path-content">
+                                <h3>Network Scanning Fundamentals</h3>
+                                <p>Learn the basics of network discovery and reconnaissance</p>
+                            </div>
+                        </div>
+                        <div class="path-item">
+                            <div class="path-number">2</div>
+                            <div class="path-content">
+                                <h3>Vulnerability Assessment</h3>
+                                <p>Identify and evaluate security weaknesses</p>
+                            </div>
+                        </div>
+                        <div class="path-item">
+                            <div class="path-number">3</div>
+                            <div class="path-content">
+                                <h3>Ethical Hacking Principles</h3>
+                                <p>Learn responsible security testing methodologies</p>
+                            </div>
+                        </div>
+                        <div class="path-item">
+                            <div class="path-number">4</div>
+                            <div class="path-content">
+                                <h3>Raspberry Pi Security Setup</h3>
+                                <p>Configure your hardware for cybersecurity operations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Network Scanning Tutorial -->
+        <section id="network-scanning" class="section bg-light">
+            <div class="container">
+                <div class="tutorial-header">
+                    <div class="tutorial-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="tutorial-title">
+                        <h2>Network Scanning Fundamentals</h2>
+                        <p class="tutorial-subtitle">Learn the foundation of cybersecurity assessment through network discovery and reconnaissance</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-grid">
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-search"></i> Understanding Network Discovery</h3>
+                        </div>
+                        <div class="card-content">
                             <p>Network discovery is the process of identifying active devices on a network. This is typically the first step in any security assessment.</p>
                             
-                            <h4>Key Concepts:</h4>
-                            <ul>
-                                <li><strong>Host Discovery:</strong> Identifying which IP addresses are active on the network</li>
-                                <li><strong>Port Scanning:</strong> Determining which ports are open on discovered hosts</li>
-                                <li><strong>Service Detection:</strong> Identifying what services are running on open ports</li>
-                                <li><strong>OS Fingerprinting:</strong> Determining the operating system of target hosts</li>
-                            </ul>
+                            <div class="concept-list">
+                                <h4>Key Concepts:</h4>
+                                <div class="concept-grid">
+                                    <div class="concept-item">
+                                        <div class="concept-icon">
+                                            <i class="fas fa-bullseye"></i>
+                                        </div>
+                                        <div class="concept-text">
+                                            <strong>Host Discovery</strong>
+                                            <span>Identifying which IP addresses are active on the network</span>
+                                        </div>
+                                    </div>
+                                    <div class="concept-item">
+                                        <div class="concept-icon">
+                                            <i class="fas fa-door-open"></i>
+                                        </div>
+                                        <div class="concept-text">
+                                            <strong>Port Scanning</strong>
+                                            <span>Determining which ports are open on discovered hosts</span>
+                                        </div>
+                                    </div>
+                                    <div class="concept-item">
+                                        <div class="concept-icon">
+                                            <i class="fas fa-cogs"></i>
+                                        </div>
+                                        <div class="concept-text">
+                                            <strong>Service Detection</strong>
+                                            <span>Identifying what services are running on open ports</span>
+                                        </div>
+                                    </div>
+                                    <div class="concept-item">
+                                        <div class="concept-icon">
+                                            <i class="fas fa-fingerprint"></i>
+                                        </div>
+                                        <div class="concept-text">
+                                            <strong>OS Fingerprinting</strong>
+                                            <span>Determining the operating system of target hosts</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="step">
-                            <h3>2. Basic Nmap Commands</h3>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-terminal"></i> Essential Nmap Commands</h3>
+                        </div>
+                        <div class="card-content">
                             <p>Nmap is the most popular network scanning tool. Here are essential commands for beginners:</p>
                             
-                            <div class="code-block">
-                                <pre><code># Basic host discovery
-nmap -sn 192.168.1.0/24
-
-# Basic port scan
-nmap 192.168.1.1
-
-# Service version detection
-nmap -sV 192.168.1.1
-
-# Operating system detection
-nmap -O 192.168.1.1
-
-# Comprehensive scan
-nmap -sS -sV -O -A 192.168.1.1</code></pre>
+                            <div class="command-examples">
+                                <div class="command-item">
+                                    <div class="command-label">Basic host discovery</div>
+                                    <div class="code-block">
+                                        <code>nmap -sn 192.168.1.0/24</code>
+                                    </div>
+                                </div>
+                                
+                                <div class="command-item">
+                                    <div class="command-label">Basic port scan</div>
+                                    <div class="code-block">
+                                        <code>nmap 192.168.1.1</code>
+                                    </div>
+                                </div>
+                                
+                                <div class="command-item">
+                                    <div class="command-label">Service version detection</div>
+                                    <div class="code-block">
+                                        <code>nmap -sV 192.168.1.1</code>
+                                    </div>
+                                </div>
+                                
+                                <div class="command-item">
+                                    <div class="command-label">Operating system detection</div>
+                                    <div class="code-block">
+                                        <code>nmap -O 192.168.1.1</code>
+                                    </div>
+                                </div>
+                                
+                                <div class="command-item">
+                                    <div class="command-label">Comprehensive scan</div>
+                                    <div class="code-block">
+                                        <code>nmap -sS -sV -O -A 192.168.1.1</code>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="step">
-                            <h3>3. Understanding Scan Types</h3>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-list-ul"></i> Understanding Scan Types</h3>
+                        </div>
+                        <div class="card-content">
                             <p>Different scan types serve different purposes in network reconnaissance:</p>
                             
-                            <ul>
-                                <li><strong>TCP SYN Scan (-sS):</strong> Stealthy scan that doesn't complete TCP handshake</li>
-                                <li><strong>TCP Connect Scan (-sT):</strong> Full TCP connection scan</li>
-                                <li><strong>UDP Scan (-sU):</strong> Scans for open UDP ports</li>
-                                <li><strong>FIN Scan (-sF):</strong> Sends FIN packets to evade firewalls</li>
-                            </ul>
+                            <div class="scan-types">
+                                <div class="scan-type">
+                                    <div class="scan-icon">
+                                        <i class="fas fa-eye-slash"></i>
+                                    </div>
+                                    <div class="scan-info">
+                                        <strong>TCP SYN Scan (-sS)</strong>
+                                        <p>Stealthy scan that doesn't complete TCP handshake</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="scan-type">
+                                    <div class="scan-icon">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                    <div class="scan-info">
+                                        <strong>TCP Connect Scan (-sT)</strong>
+                                        <p>Full TCP connection scan</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="scan-type">
+                                    <div class="scan-icon">
+                                        <i class="fas fa-broadcast-tower"></i>
+                                    </div>
+                                    <div class="scan-info">
+                                        <strong>UDP Scan (-sU)</strong>
+                                        <p>Scans for open UDP ports</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="scan-type">
+                                    <div class="scan-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="scan-info">
+                                        <strong>FIN Scan (-sF)</strong>
+                                        <p>Sends FIN packets to evade firewalls</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,110 +259,161 @@ nmap -sS -sV -O -A 192.168.1.1</code></pre>
         <!-- Section Divider -->
         <div class="section-divider"></div>
 
-        <section id="vulnerability-assessment" class="section bg-dark">
+        <!-- Vulnerability Assessment Tutorial -->
+        <section id="vulnerability-assessment" class="section">
             <div class="container">
-                <h2>Vulnerability Assessment Fundamentals</h2>
-                <div class="tutorial-content">
-                    <div class="tutorial-intro">
-                        <p>Vulnerability assessment is the systematic examination of security weaknesses in systems and networks. Learn how to identify and evaluate potential security risks.</p>
+                <div class="tutorial-header">
+                    <div class="tutorial-icon">
+                        <i class="fas fa-bug"></i>
                     </div>
-                    
-                    <div class="tutorial-steps">
-                        <div class="step">
-                            <h3>1. Vulnerability Assessment Process</h3>
+                    <div class="tutorial-title">
+                        <h2>Vulnerability Assessment Fundamentals</h2>
+                        <p class="tutorial-subtitle">Learn to identify and evaluate security weaknesses in systems and networks</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-grid">
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-clipboard-list"></i> Assessment Process</h3>
+                        </div>
+                        <div class="card-content">
                             <p>A systematic approach to identifying and evaluating security vulnerabilities:</p>
                             
-                            <ol>
-                                <li><strong>Asset Discovery:</strong> Identify all assets in the target environment</li>
-                                <li><strong>Vulnerability Scanning:</strong> Use automated tools to find known vulnerabilities</li>
-                                <li><strong>Manual Testing:</strong> Perform additional manual checks</li>
-                                <li><strong>Risk Assessment:</strong> Evaluate the risk level of identified vulnerabilities</li>
-                                <li><strong>Reporting:</strong> Document findings and provide remediation recommendations</li>
-                            </ol>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Asset Discovery</h4>
+                                        <p>Identify all assets in the target environment</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Vulnerability Scanning</h4>
+                                        <p>Use automated tools to find known vulnerabilities</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Manual Testing</h4>
+                                        <p>Perform additional manual checks</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Risk Assessment</h4>
+                                        <p>Evaluate the risk level of identified vulnerabilities</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Reporting</h4>
+                                        <p>Document findings and provide remediation recommendations</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="step">
-                            <h3>2. Common Vulnerability Types</h3>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Common Vulnerability Types</h3>
+                        </div>
+                        <div class="card-content">
                             <p>Understanding common vulnerability categories helps in systematic assessment:</p>
                             
-                            <ul>
-                                <li><strong>Unpatched Software:</strong> Outdated software with known security flaws</li>
-                                <li><strong>Misconfigurations:</strong> Improperly configured systems and services</li>
-                                <li><strong>Weak Authentication:</strong> Poor password policies and authentication mechanisms</li>
-                                <li><strong>Network Vulnerabilities:</strong> Insecure network protocols and configurations</li>
-                                <li><strong>Web Application Flaws:</strong> SQL injection, XSS, and other web vulnerabilities</li>
-                            </ul>
+                            <div class="vulnerability-types">
+                                <div class="vuln-type">
+                                    <div class="vuln-icon">
+                                        <i class="fas fa-download"></i>
+                                    </div>
+                                    <div class="vuln-info">
+                                        <strong>Unpatched Software</strong>
+                                        <p>Outdated software with known security flaws</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vuln-type">
+                                    <div class="vuln-icon">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <div class="vuln-info">
+                                        <strong>Misconfigurations</strong>
+                                        <p>Improperly configured systems and services</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vuln-type">
+                                    <div class="vuln-icon">
+                                        <i class="fas fa-key"></i>
+                                    </div>
+                                    <div class="vuln-info">
+                                        <strong>Weak Authentication</strong>
+                                        <p>Poor password policies and authentication mechanisms</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vuln-type">
+                                    <div class="vuln-icon">
+                                        <i class="fas fa-network-wired"></i>
+                                    </div>
+                                    <div class="vuln-info">
+                                        <strong>Network Vulnerabilities</strong>
+                                        <p>Insecure network protocols and configurations</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vuln-type">
+                                    <div class="vuln-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="vuln-info">
+                                        <strong>Web Application Flaws</strong>
+                                        <p>SQL injection, XSS, and other web vulnerabilities</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="step">
-                            <h3>3. Using Bjorn for Vulnerability Assessment</h3>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-robot"></i> Using Bjorn for Assessment</h3>
+                        </div>
+                        <div class="card-content">
                             <p>Bjorn automates many vulnerability assessment tasks:</p>
                             
-                            <ul>
-                                <li>Automated network scanning and service detection</li>
-                                <li>Vulnerability database lookups for identified services</li>
-                                <li>Weak credential testing on common services</li>
-                                <li>Web interface for monitoring and managing assessments</li>
-                                <li>Comprehensive reporting and documentation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="ethical-hacking" class="section">
-            <div class="container">
-                <h2>Ethical Hacking Principles</h2>
-                <div class="tutorial-content">
-                    <div class="tutorial-intro">
-                        <p>Ethical hacking involves using hacking techniques for legitimate security testing purposes. Learn the principles and methodologies that guide responsible security testing.</p>
-                    </div>
-                    
-                    <div class="tutorial-steps">
-                        <div class="step">
-                            <h3>1. Legal and Ethical Considerations</h3>
-                            <p>Before conducting any security testing, it's crucial to understand legal and ethical boundaries:</p>
-                            
-                            <div class="warning-box">
-                                <h4><i class="fas fa-exclamation-triangle"></i> Important Legal Notice</h4>
-                                <p>Only perform security testing on systems you own or have explicit written permission to test. Unauthorized access to computer systems is illegal in most jurisdictions.</p>
+                            <div class="bjorn-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-search"></i>
+                                    <span>Automated network scanning and service detection</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>Vulnerability database lookups for identified services</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-user-lock"></i>
+                                    <span>Weak credential testing on common services</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-desktop"></i>
+                                    <span>Web interface for monitoring and managing assessments</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>Comprehensive reporting and documentation</span>
+                                </div>
                             </div>
-                            
-                            <ul>
-                                <li><strong>Authorization:</strong> Always obtain proper written authorization before testing</li>
-                                <li><strong>Scope Definition:</strong> Clearly define what systems and methods are permitted</li>
-                                <li><strong>Disclosure:</strong> Report vulnerabilities responsibly to system owners</li>
-                                <li><strong>Documentation:</strong> Keep detailed records of all testing activities</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="step">
-                            <h3>2. Penetration Testing Methodology</h3>
-                            <p>A systematic approach to penetration testing ensures thorough and consistent results:</p>
-                            
-                            <ol>
-                                <li><strong>Planning and Reconnaissance:</strong> Gather information about the target</li>
-                                <li><strong>Scanning:</strong> Identify live systems and open ports</li>
-                                <li><strong>Enumeration:</strong> Extract detailed information about discovered services</li>
-                                <li><strong>Vulnerability Assessment:</strong> Identify potential security weaknesses</li>
-                                <li><strong>Exploitation:</strong> Attempt to exploit identified vulnerabilities</li>
-                                <li><strong>Post-Exploitation:</strong> Determine the extent of compromise</li>
-                                <li><strong>Reporting:</strong> Document findings and provide recommendations</li>
-                            </ol>
-                        </div>
-                        
-                        <div class="step">
-                            <h3>3. Common Attack Vectors</h3>
-                            <p>Understanding common attack methods helps in both offensive and defensive security:</p>
-                            
-                            <ul>
-                                <li><strong>Network Attacks:</strong> Exploiting network protocols and services</li>
-                                <li><strong>Web Application Attacks:</strong> Targeting web-based applications</li>
-                                <li><strong>Social Engineering:</strong> Manipulating human behavior for access</li>
-                                <li><strong>Physical Security:</strong> Gaining physical access to systems</li>
-                                <li><strong>Wireless Attacks:</strong> Targeting wireless networks and devices</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -223,68 +423,421 @@ nmap -sS -sV -O -A 192.168.1.1</code></pre>
         <!-- Section Divider -->
         <div class="section-divider"></div>
 
-        <section id="raspberry-pi-setup" class="section bg-dark">
+        <!-- Ethical Hacking Tutorial -->
+        <section id="ethical-hacking" class="section bg-light">
             <div class="container">
-                <h2>Raspberry Pi Security Setup</h2>
-                <div class="tutorial-content">
-                    <div class="tutorial-intro">
-                        <p>Setting up a secure Raspberry Pi environment for cybersecurity operations requires careful configuration and security hardening.</p>
+                <div class="tutorial-header">
+                    <div class="tutorial-icon">
+                        <i class="fas fa-user-secret"></i>
                     </div>
-                    
-                    <div class="tutorial-steps">
-                        <div class="step">
-                            <h3>1. Initial Setup and Hardening</h3>
+                    <div class="tutorial-title">
+                        <h2>Ethical Hacking Principles</h2>
+                        <p class="tutorial-subtitle">Learn responsible security testing methodologies and legal considerations</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-grid">
+                    <div class="tutorial-card warning-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Legal and Ethical Considerations</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="warning-notice">
+                                <div class="warning-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="warning-text">
+                                    <h4>Important Legal Notice</h4>
+                                    <p>Only perform security testing on systems you own or have explicit written permission to test. Unauthorized access to computer systems is illegal in most jurisdictions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="ethical-guidelines">
+                                <div class="guideline">
+                                    <i class="fas fa-file-contract"></i>
+                                    <div>
+                                        <strong>Authorization</strong>
+                                        <p>Always obtain proper written authorization before testing</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="guideline">
+                                    <i class="fas fa-crosshairs"></i>
+                                    <div>
+                                        <strong>Scope Definition</strong>
+                                        <p>Clearly define what systems and methods are permitted</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="guideline">
+                                    <i class="fas fa-eye"></i>
+                                    <div>
+                                        <strong>Disclosure</strong>
+                                        <p>Report vulnerabilities responsibly to system owners</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="guideline">
+                                    <i class="fas fa-clipboard"></i>
+                                    <div>
+                                        <strong>Documentation</strong>
+                                        <p>Keep detailed records of all testing activities</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-route"></i> Penetration Testing Methodology</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>A systematic approach to penetration testing ensures thorough and consistent results:</p>
+                            
+                            <div class="methodology-steps">
+                                <div class="method-step">
+                                    <div class="method-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Planning and Reconnaissance</h4>
+                                        <p>Gather information about the target</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="method-step">
+                                    <div class="method-icon">
+                                        <i class="fas fa-radar"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Scanning</h4>
+                                        <p>Identify live systems and open ports</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="method-step">
+                                    <div class="method-icon">
+                                        <i class="fas fa-list"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Enumeration</h4>
+                                        <p>Extract detailed information about discovered services</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="method-step">
+                                    <div class="method-icon">
+                                        <i class="fas fa-bug"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Vulnerability Assessment</h4>
+                                        <p>Identify potential security weaknesses</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="method-step">
+                                    <div class="method-icon">
+                                        <i class="fas fa-hammer"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Exploitation</h4>
+                                        <p>Attempt to exploit identified vulnerabilities</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="method-step">
+                                    <div class="method-icon">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Post-Exploitation</h4>
+                                        <p>Determine the extent of compromise</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="method-step">
+                                    <div class="method-icon">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Reporting</h4>
+                                        <p>Document findings and provide recommendations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-crosshairs"></i> Common Attack Vectors</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Understanding common attack methods helps in both offensive and defensive security:</p>
+                            
+                            <div class="attack-vectors">
+                                <div class="vector-item">
+                                    <div class="vector-icon">
+                                        <i class="fas fa-network-wired"></i>
+                                    </div>
+                                    <div class="vector-info">
+                                        <strong>Network Attacks</strong>
+                                        <p>Exploiting network protocols and services</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vector-item">
+                                    <div class="vector-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="vector-info">
+                                        <strong>Web Application Attacks</strong>
+                                        <p>Targeting web-based applications</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vector-item">
+                                    <div class="vector-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="vector-info">
+                                        <strong>Social Engineering</strong>
+                                        <p>Manipulating human behavior for access</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vector-item">
+                                    <div class="vector-icon">
+                                        <i class="fas fa-building"></i>
+                                    </div>
+                                    <div class="vector-info">
+                                        <strong>Physical Security</strong>
+                                        <p>Gaining physical access to systems</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vector-item">
+                                    <div class="vector-icon">
+                                        <i class="fas fa-wifi"></i>
+                                    </div>
+                                    <div class="vector-info">
+                                        <strong>Wireless Attacks</strong>
+                                        <p>Targeting wireless networks and devices</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Raspberry Pi Setup Tutorial -->
+        <section id="raspberry-pi-setup" class="section">
+            <div class="container">
+                <div class="tutorial-header">
+                    <div class="tutorial-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="tutorial-title">
+                        <h2>Raspberry Pi Security Setup</h2>
+                        <p class="tutorial-subtitle">Configure your hardware platform for professional cybersecurity operations</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-grid">
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-shield-alt"></i> Initial Setup and Hardening</h3>
+                        </div>
+                        <div class="card-content">
                             <p>Start with a secure foundation for your Raspberry Pi:</p>
                             
-                            <div class="code-block">
-                                <pre><code># Update system packages
-sudo apt update && sudo apt upgrade -y
-
-# Change default password
-passwd
-
-# Configure SSH securely
-sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
-sudo sed -i 's/#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
-sudo systemctl restart ssh
-
-# Setup firewall
-sudo ufw enable
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw allow ssh</code></pre>
+                            <div class="setup-commands">
+                                <div class="command-group">
+                                    <h4>System Updates</h4>
+                                    <div class="code-block">
+                                        <code># Update system packages<br>
+sudo apt update && sudo apt upgrade -y<br><br>
+# Change default password<br>
+passwd</code>
+                                    </div>
+                                </div>
+                                
+                                <div class="command-group">
+                                    <h4>SSH Security</h4>
+                                    <div class="code-block">
+                                        <code># Configure SSH securely<br>
+sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config<br>
+sudo sed -i 's/#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config<br>
+sudo systemctl restart ssh</code>
+                                    </div>
+                                </div>
+                                
+                                <div class="command-group">
+                                    <h4>Firewall Setup</h4>
+                                    <div class="code-block">
+                                        <code># Setup firewall<br>
+sudo ufw enable<br>
+sudo ufw default deny incoming<br>
+sudo ufw default allow outgoing<br>
+sudo ufw allow ssh</code>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="step">
-                            <h3>2. Installing Security Tools</h3>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-tools"></i> Installing Security Tools</h3>
+                        </div>
+                        <div class="card-content">
                             <p>Install essential cybersecurity tools for your Raspberry Pi:</p>
                             
-                            <div class="code-block">
-                                <pre><code># Install network scanning tools
-sudo apt install nmap masscan
-
-# Install vulnerability scanners
-sudo apt install nikto dirb gobuster
-
-# Install network analysis tools
-sudo apt install wireshark tcpdump
-
-# Install web application testing tools
-sudo apt install sqlmap burpsuite</code></pre>
+                            <div class="tool-categories">
+                                <div class="tool-category">
+                                    <h4><i class="fas fa-search"></i> Network Scanning Tools</h4>
+                                    <div class="code-block">
+                                        <code>sudo apt install nmap masscan</code>
+                                    </div>
+                                </div>
+                                
+                                <div class="tool-category">
+                                    <h4><i class="fas fa-bug"></i> Vulnerability Scanners</h4>
+                                    <div class="code-block">
+                                        <code>sudo apt install nikto dirb gobuster</code>
+                                    </div>
+                                </div>
+                                
+                                <div class="tool-category">
+                                    <h4><i class="fas fa-chart-line"></i> Network Analysis Tools</h4>
+                                    <div class="code-block">
+                                        <code>sudo apt install wireshark tcpdump</code>
+                                    </div>
+                                </div>
+                                
+                                <div class="tool-category">
+                                    <h4><i class="fas fa-globe"></i> Web Application Testing</h4>
+                                    <div class="code-block">
+                                        <code>sudo apt install sqlmap burpsuite</code>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="step">
-                            <h3>3. Network Configuration</h3>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-network-wired"></i> Network Configuration</h3>
+                        </div>
+                        <div class="card-content">
                             <p>Configure your Raspberry Pi for security testing:</p>
                             
-                            <ul>
-                                <li><strong>Isolated Network:</strong> Use a separate network for testing</li>
-                                <li><strong>VPN Setup:</strong> Configure VPN for secure remote access</li>
-                                <li><strong>Network Monitoring:</strong> Set up traffic monitoring and logging</li>
-                                <li><strong>Wireless Configuration:</strong> Secure wireless connections</li>
-                            </ul>
+                            <div class="config-items">
+                                <div class="config-item">
+                                    <div class="config-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="config-info">
+                                        <strong>Isolated Network</strong>
+                                        <p>Use a separate network for testing to avoid affecting production systems</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="config-item">
+                                    <div class="config-icon">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="config-info">
+                                        <strong>VPN Setup</strong>
+                                        <p>Configure VPN for secure remote access to your testing environment</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="config-item">
+                                    <div class="config-icon">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <div class="config-info">
+                                        <strong>Network Monitoring</strong>
+                                        <p>Set up traffic monitoring and logging for analysis and compliance</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="config-item">
+                                    <div class="config-icon">
+                                        <i class="fas fa-wifi"></i>
+                                    </div>
+                                    <div class="config-info">
+                                        <strong>Wireless Configuration</strong>
+                                        <p>Secure wireless connections and configure for penetration testing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Next Steps Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="next-steps">
+                    <h2>Ready to Continue Learning?</h2>
+                    <p>Expand your cybersecurity knowledge with our additional resources and community support.</p>
+                    
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Security Guides</h3>
+                            <p>Advanced security guides and best practices for professionals</p>
+                            <a href="security-guides.html" class="resource-btn">
+                                <i class="fas fa-arrow-right"></i> View Guides
+                            </a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <h3>Video Tutorials</h3>
+                            <p>Watch step-by-step video guides and demonstrations</p>
+                            <a href="videos.html" class="resource-btn">
+                                <i class="fas fa-arrow-right"></i> Watch Videos
+                            </a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h3>3D Models</h3>
+                            <p>Download and print professional cases for your hardware</p>
+                            <a href="resources.html" class="resource-btn">
+                                <i class="fas fa-arrow-right"></i> Get Models
+                            </a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Join Community</h3>
+                            <p>Connect with other cybersecurity enthusiasts and experts</p>
+                            <a href="index.html#community" class="resource-btn">
+                                <i class="fas fa-arrow-right"></i> Join Now
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -305,8 +858,8 @@ sudo apt install sqlmap burpsuite</code></pre>
                     <ul>
                         <li><a href="tutorials.html">Tutorials</a></li>
                         <li><a href="security-guides.html">Security Guides</a></li>
+                        <li><a href="videos.html">Video Tutorials</a></li>
                         <li><a href="index.html#installation">Installation Guide</a></li>
-                        <li><a href="#">Best Practices</a></li>
                     </ul>
                 </div>
                 
