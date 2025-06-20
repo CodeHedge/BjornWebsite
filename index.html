@@ -3,38 +3,426 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bjorn Cyber Viking</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Bjorn Cyber Viking - Advanced Network Security Tool for Raspberry Pi</title>
+    <meta name="description" content="Bjorn is a sophisticated autonomous network scanning and vulnerability assessment tool designed for Raspberry Pi with e-Paper HAT display. Learn cybersecurity, network analysis, and penetration testing.">
+    <meta name="keywords" content="cybersecurity, network scanning, vulnerability assessment, raspberry pi, penetration testing, security tools, network security, ethical hacking">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5941869854528444"
      crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-5941869854528444">
 </head>
 <body>
-    <header>
-        <h1>Bjorn Cyber Viking</h1>
-        <p>The viking themed pentesting platform</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Bjorn Cyber Viking</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#installation" class="nav-link">Installation</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="security-guides.html" class="nav-link">Security Guides</a>
+                <a href="resources.html" class="nav-link">3D Models</a>
+                <a href="#community" class="nav-link">Community</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bjorn Cyber Viking</h1>
+            <p class="hero-subtitle">Advanced Network Security & Vulnerability Assessment Tool</p>
+            <p class="hero-description">A sophisticated, autonomous cybersecurity platform designed for Raspberry Pi with e-Paper HAT display</p>
+            <div class="hero-buttons">
+                <a href="#installation" class="btn btn-primary">Get Started</a>
+                <a href="https://github.com/infinition/Bjorn" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
     </header>
-    
+
+    <!-- AdSense Ad Space -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5941869854528444"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
     <main>
-        <section>
-            <h2>Join Our Communities</h2>
-            <div class="button-container">
-                <button class="social-button discord" onclick="window.location.href='https://discord.gg/nHHVt5hPer'">
-                    <i class="fab fa-discord"></i> Discord
-                </button>
-                <button class="social-button reddit" onclick="window.location.href='https://www.reddit.com/r/Bjorn_CyberViking/'">
-                    <i class="fab fa-reddit"></i> Reddit
-                </button>
-                <button class="social-button github" onclick="window.location.href='https://github.com/infinition/Bjorn'">
-                    <i class="fab fa-github"></i> GitHub
-                </button>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Bjorn</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Bjorn is a powerful cybersecurity tool that transforms your Raspberry Pi into a sophisticated network security assessment platform. Named after the legendary Viking warriors, Bjorn embodies the spirit of exploration and conquest in the digital realm.</p>
+                        
+                        <p>This autonomous tool performs comprehensive network scanning, vulnerability assessment, and security testing operations. With its intuitive e-Paper HAT display and web interface, Bjorn provides real-time monitoring and interaction capabilities that make complex security operations accessible to both beginners and experts.</p>
+                        
+                        <p>Whether you're a cybersecurity professional, a student learning about network security, or an enthusiast exploring the world of ethical hacking, Bjorn offers a comprehensive platform for understanding and improving network security posture.</p>
+                    </div>
+                    <div class="about-features">
+                        <h3>Why Choose Bjorn?</h3>
+                        <ul>
+                            <li><i class="fas fa-shield-alt"></i> Professional-grade security assessment</li>
+                            <li><i class="fas fa-desktop"></i> Real-time e-Paper display interface</li>
+                            <li><i class="fas fa-cogs"></i> Modular and extensible architecture</li>
+                            <li><i class="fas fa-graduation-cap"></i> Educational and learning-focused</li>
+                            <li><i class="fas fa-users"></i> Strong community support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section bg-dark">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Scanning</h3>
+                        <p>Comprehensive network discovery and port scanning capabilities. Identify live hosts, open ports, and running services across your network infrastructure.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>Vulnerability Assessment</h3>
+                        <p>Advanced vulnerability scanning using industry-standard tools like Nmap. Identify potential security weaknesses and misconfigurations.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security Testing</h3>
+                        <p>Perform authorized penetration testing activities including brute-force attacks on various services (FTP, SSH, SMB, RDP, Telnet, SQL).</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-display"></i>
+                        </div>
+                        <h3>E-Paper Display</h3>
+                        <p>Real-time status updates and monitoring through the integrated 2.13-inch e-Paper HAT display, providing at-a-glance operation status.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Interface</h3>
+                        <p>Comprehensive web-based interface for remote monitoring, configuration, and control of all Bjorn operations and settings.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Data Extraction</h3>
+                        <p>Secure data extraction capabilities from vulnerable services for authorized security assessments and penetration testing activities.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>3D Printable Case</h3>
+                        <p>Professional custom enclosure available for 3D printing, including both single-color and dual-color AMS variants. <a href="resources.html" style="color: #007bff;">Download models</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AdSense Ad Space -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5941869854528444"
+                 data-ad-slot="1234567891"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <section id="installation" class="section">
+            <div class="container">
+                <h2>Installation Guide</h2>
+                <div class="installation-content">
+                    <div class="installation-intro">
+                        <p>Getting started with Bjorn is straightforward with our automated installation script. Follow the steps below to set up your Bjorn cybersecurity platform.</p>
+                    </div>
+                    
+                    <div class="installation-steps">
+                        <h3>Getting Started</h3>
+                        
+                        <div class="step">
+                            <h4>Prerequisites</h4>
+                            <div class="prereq-tabs">
+                                <div class="tab-buttons">
+                                    <button class="tab-btn active" data-tab="rpi-32">Raspberry Pi Zero W (32-bit)</button>
+                                    <button class="tab-btn" data-tab="rpi-64">Raspberry Pi Zero W2 (64-bit)</button>
+                                </div>
+                                
+                                <div class="tab-content active" id="rpi-32">
+                                    <h5>Prerequisites for Raspberry Pi Zero W (32-bit)</h5>
+                                    <ul>
+                                        <li>Raspberry Pi OS installed</li>
+                                        <li>System: 32-bit</li>
+                                        <li>Kernel version: 6.6</li>
+                                        <li>Debian version: 12 (bookworm) '2024-10-22-raspios-bookworm-armhf-lite'</li>
+                                        <li>Username and hostname set to 'bjorn'</li>
+                                        <li>2.13-inch e-Paper HAT connected to GPIO pins</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tab-content" id="rpi-64">
+                                    <h5>Prerequisites for Raspberry Pi Zero W2 (64-bit)</h5>
+                                    <p><strong>Note:</strong> While not originally developed for the 64-bit version, community feedback confirms successful installations.</p>
+                                    <ul>
+                                        <li>Raspberry Pi OS installed</li>
+                                        <li>System: 64-bit</li>
+                                        <li>Kernel version: 6.6</li>
+                                        <li>Debian version: 12 (bookworm) '2024-10-22-raspios-bookworm-arm64-lite'</li>
+                                        <li>Username and hostname set to 'bjorn'</li>
+                                        <li>2.13-inch e-Paper HAT connected to GPIO pins</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <h4>Installation Process</h4>
+                            <p>The fastest way to install Bjorn is using our automatic installation script:</p>
+                            <div class="code-block">
+                                <pre><code># Download and run the installer
+wget https://raw.githubusercontent.com/infinition/Bjorn/refs/heads/main/install_bjorn.sh
+
+# Make the script executable and run it
+sudo chmod +x install_bjorn.sh && sudo ./install_bjorn.sh
+
+# Choose option 1 for automatic installation
+# Note: Installation may take some time as numerous packages and modules will be installed
+# You must reboot the system after installation completes</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <h4>Post-Installation</h4>
+                            <p>After installation and reboot, your Bjorn system will be ready for operation. The e-Paper display will show system status, and you can access the web interface through your browser.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutorials" class="section bg-dark">
+            <div class="container">
+                <h2>Tutorials & Learning Resources</h2>
+                <div class="tutorials-grid">
+                    <div class="tutorial-card">
+                        <h3>Getting Started with Network Scanning</h3>
+                        <p>Learn the fundamentals of network discovery and port scanning. Understand how to identify live hosts and services on your network.</p>
+                        <a href="#" class="btn btn-small">Read Tutorial</a>
+                    </div>
+                    
+                    <div class="tutorial-card">
+                        <h3>Understanding Vulnerability Assessment</h3>
+                        <p>Explore the concepts of vulnerability scanning and assessment. Learn how to identify and evaluate security weaknesses.</p>
+                        <a href="#" class="btn btn-small">Read Tutorial</a>
+                    </div>
+                    
+                    <div class="tutorial-card">
+                        <h3>Ethical Hacking Fundamentals</h3>
+                        <p>Introduction to ethical hacking principles and methodologies. Learn the legal and ethical aspects of security testing.</p>
+                        <a href="#" class="btn btn-small">Read Tutorial</a>
+                    </div>
+                    
+                    <div class="tutorial-card">
+                        <h3>Raspberry Pi Security Setup</h3>
+                        <p>Comprehensive guide to securing your Raspberry Pi for cybersecurity operations and penetration testing activities.</p>
+                        <a href="#" class="btn btn-small">Read Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="security-guides" class="section">
+            <div class="container">
+                <h2>Security Guides & Best Practices</h2>
+                <div class="guides-content">
+                    <div class="guide-intro">
+                        <p>Comprehensive security guides and best practices for network administrators, cybersecurity professionals, and enthusiasts.</p>
+                    </div>
+                    
+                    <div class="guides-grid">
+                        <div class="guide-item">
+                            <h3><i class="fas fa-lock"></i> Network Security Fundamentals</h3>
+                            <p>Essential concepts in network security including firewalls, intrusion detection, and access control mechanisms.</p>
+                        </div>
+                        
+                        <div class="guide-item">
+                            <h3><i class="fas fa-user-shield"></i> Penetration Testing Methodology</h3>
+                            <p>Systematic approach to penetration testing including reconnaissance, scanning, exploitation, and reporting phases.</p>
+                        </div>
+                        
+                        <div class="guide-item">
+                            <h3><i class="fas fa-server"></i> Server Hardening Techniques</h3>
+                            <p>Best practices for securing servers and network infrastructure against common attack vectors and vulnerabilities.</p>
+                        </div>
+                        
+                        <div class="guide-item">
+                            <h3><i class="fas fa-wifi"></i> Wireless Security Assessment</h3>
+                            <p>Comprehensive guide to wireless network security testing and vulnerability assessment methodologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AdSense Ad Space -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5941869854528444"
+                 data-ad-slot="1234567892"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <section id="community" class="section bg-dark">
+            <div class="container">
+                <h2>Join Our Community</h2>
+                <div class="community-content">
+                    <p>Connect with fellow cybersecurity enthusiasts, share knowledge, and get support from our active community of users and developers.</p>
+                    
+                    <div class="community-stats">
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Active Users</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>GitHub Stars</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Community Support</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-buttons">
+                        <a href="https://discord.gg/nHHVt5hPer" class="social-btn discord" target="_blank">
+                            <i class="fab fa-discord"></i>
+                            <div>
+                                <strong>Discord</strong>
+                                <span>Join our chat community</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.reddit.com/r/Bjorn_CyberViking/" class="social-btn reddit" target="_blank">
+                            <i class="fab fa-reddit"></i>
+                            <div>
+                                <strong>Reddit</strong>
+                                <span>Discussion & support</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/infinition/Bjorn" class="social-btn github" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <strong>GitHub</strong>
+                                <span>Source code & issues</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Get the latest updates, tutorials, and security insights delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Bjorn Cyber Viking. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bjorn Cyber Viking</h3>
+                    <p>Advanced cybersecurity tools for the modern digital warrior. Empowering security professionals and enthusiasts worldwide.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#tutorials">Tutorials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://github.com/infinition/Bjorn">GitHub Repository</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Security Guidelines</a></li>
+                        <li><a href="#">Legal & Ethics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="https://discord.gg/nHHVt5hPer">Discord</a></li>
+                        <li><a href="https://www.reddit.com/r/Bjorn_CyberViking/">Reddit</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contribute</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bjorn Cyber Viking. All rights reserved. This tool is for authorized security testing and educational purposes only.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Legal Notice</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="assets/js/main.js"></script>

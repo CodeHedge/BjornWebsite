@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Guides & Best Practices - Bjorn Cyber Viking</title>
+    <meta name="description" content="Comprehensive security guides, best practices, and defense strategies for network administrators and cybersecurity professionals. Learn how to secure your infrastructure.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5941869854528444"
+     crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-5941869854528444">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Bjorn Cyber Viking</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#installation" class="nav-link">Installation</a>
+                <a href="tutorials.html" class="nav-link">Tutorials</a>
+                <a href="security-guides.html" class="nav-link">Security Guides</a>
+                <a href="resources.html" class="nav-link">3D Models</a>
+                <a href="index.html#community" class="nav-link">Community</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Security Guides & Best Practices</h1>
+            <p>Comprehensive security strategies and defensive measures for protecting your digital infrastructure</p>
+        </div>
+    </header>
+
+    <!-- AdSense Ad Space -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5941869854528444"
+             data-ad-slot="1234567896"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Network Security Fundamentals</h2>
+                <div class="guide-content">
+                    <div class="guide-intro">
+                        <p>Network security forms the backbone of any cybersecurity strategy. Understanding and implementing proper network security controls is essential for protecting organizational assets.</p>
+                    </div>
+                    
+                    <div class="security-topics">
+                        <div class="topic">
+                            <h3><i class="fas fa-shield-alt"></i> Firewall Configuration</h3>
+                            <p>Firewalls are the first line of defense in network security. Proper configuration and management are crucial for effective protection.</p>
+                            
+                            <h4>Best Practices:</h4>
+                            <ul>
+                                <li><strong>Default Deny Policy:</strong> Block all traffic by default, then allow specific required traffic</li>
+                                <li><strong>Regular Rule Review:</strong> Periodically audit and clean up firewall rules</li>
+                                <li><strong>Logging and Monitoring:</strong> Enable comprehensive logging for security analysis</li>
+                                <li><strong>Layer Defense:</strong> Implement multiple firewall layers (perimeter, internal, host-based)</li>
+                            </ul>
+                            
+                            <div class="code-block">
+                                <pre><code># Basic UFW firewall setup
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw enable
+
+# Advanced iptables rule
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+iptables -A INPUT -p tcp --dport 22 -m limit --limit 5/min -j ACCEPT</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-eye"></i> Intrusion Detection Systems</h3>
+                            <p>IDS solutions help detect malicious activities and security policy violations in your network.</p>
+                            
+                            <h4>Implementation Strategy:</h4>
+                            <ul>
+                                <li><strong>Network-based IDS:</strong> Monitor network traffic for suspicious patterns</li>
+                                <li><strong>Host-based IDS:</strong> Monitor individual systems for unauthorized changes</li>
+                                <li><strong>Signature-based Detection:</strong> Identify known attack patterns</li>
+                                <li><strong>Anomaly-based Detection:</strong> Detect deviations from normal behavior</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-lock"></i> Access Control Mechanisms</h3>
+                            <p>Implementing robust access controls ensures that only authorized users can access network resources.</p>
+                            
+                            <h4>Key Components:</h4>
+                            <ul>
+                                <li><strong>Network Segmentation:</strong> Separate networks based on security requirements</li>
+                                <li><strong>VLANs:</strong> Use virtual LANs to isolate network traffic</li>
+                                <li><strong>Network Access Control:</strong> Authenticate and authorize devices before network access</li>
+                                <li><strong>Zero Trust Architecture:</strong> Never trust, always verify approach</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AdSense Ad Space -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5941869854528444"
+                 data-ad-slot="1234567897"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <section class="section bg-dark">
+            <div class="container">
+                <h2>Server Hardening Techniques</h2>
+                <div class="guide-content">
+                    <div class="guide-intro">
+                        <p>Server hardening involves securing servers by reducing their attack surface and implementing security best practices to protect against threats.</p>
+                    </div>
+                    
+                    <div class="security-topics">
+                        <div class="topic">
+                            <h3><i class="fas fa-server"></i> Operating System Hardening</h3>
+                            <p>Securing the underlying operating system is fundamental to server security.</p>
+                            
+                            <h4>Essential Steps:</h4>
+                            <ul>
+                                <li><strong>Regular Updates:</strong> Keep the OS and all software up to date</li>
+                                <li><strong>Remove Unnecessary Services:</strong> Disable and remove unused services and software</li>
+                                <li><strong>User Account Management:</strong> Implement strong password policies and disable unused accounts</li>
+                                <li><strong>File System Permissions:</strong> Set appropriate permissions on files and directories</li>
+                            </ul>
+                            
+                            <div class="code-block">
+                                <pre><code># System update and package management
+sudo apt update && sudo apt upgrade -y
+sudo apt autoremove -y
+
+# Remove unnecessary packages
+sudo apt purge telnet rsh-client rsh-redone-client
+
+# Secure SSH configuration
+sudo sed -i 's/#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
+sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
+sudo systemctl restart ssh</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-user-shield"></i> Authentication and Authorization</h3>
+                            <p>Implementing strong authentication and authorization mechanisms prevents unauthorized access.</p>
+                            
+                            <h4>Security Measures:</h4>
+                            <ul>
+                                <li><strong>Multi-Factor Authentication:</strong> Require multiple authentication factors</li>
+                                <li><strong>Key-based Authentication:</strong> Use SSH keys instead of passwords</li>
+                                <li><strong>Role-based Access Control:</strong> Grant minimum necessary permissions</li>
+                                <li><strong>Regular Access Reviews:</strong> Periodically review and update user access</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-chart-line"></i> Monitoring and Logging</h3>
+                            <p>Comprehensive monitoring and logging help detect security incidents and maintain system health.</p>
+                            
+                            <h4>Implementation Guidelines:</h4>
+                            <ul>
+                                <li><strong>Centralized Logging:</strong> Collect logs from all systems in a central location</li>
+                                <li><strong>Log Analysis:</strong> Regularly analyze logs for suspicious activities</li>
+                                <li><strong>Real-time Monitoring:</strong> Implement alerting for critical security events</li>
+                                <li><strong>Log Retention:</strong> Maintain logs for appropriate retention periods</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Hardware Security Considerations</h2>
+                <div class="guide-content">
+                    <div class="guide-intro">
+                        <p>Physical security and hardware protection are often overlooked but critical components of a comprehensive security strategy. For devices like Bjorn, proper enclosures and physical security measures are essential.</p>
+                    </div>
+                    
+                    <div class="security-topics">
+                        <div class="topic">
+                            <h3><i class="fas fa-cube"></i> Physical Enclosures</h3>
+                            <p>Protecting cybersecurity devices with proper physical enclosures prevents tampering and environmental damage.</p>
+                            
+                            <h4>Benefits of Custom Cases:</h4>
+                            <ul>
+                                <li><strong>Tamper Protection:</strong> Prevent unauthorized physical access to components</li>
+                                <li><strong>Environmental Shield:</strong> Protect against dust, moisture, and temperature extremes</li>
+                                <li><strong>Professional Deployment:</strong> Enable clean installation in professional environments</li>
+                                <li><strong>Signal Integrity:</strong> Maintain proper electromagnetic shielding</li>
+                            </ul>
+                            
+                            <div class="info-box">
+                                <h4><i class="fas fa-info-circle"></i> Bjorn Case Design</h4>
+                                <p>The custom 3D-printed Bjorn case provides optimal protection while maintaining access to all necessary ports and the e-Paper display. <a href="resources.html">Download the 3D models</a> to print your own professional enclosure.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-wifi"></i> Wireless Security Assessment</h3>
+                            <p>Wireless networks present unique security challenges that require specialized assessment techniques and security measures.</p>
+                            
+                            <h4>Security Recommendations:</h4>
+                            <ul>
+                                <li><strong>Strong Encryption:</strong> Use WPA3 or WPA2 with strong passphrases</li>
+                                <li><strong>Network Segmentation:</strong> Separate wireless traffic from critical network segments</li>
+                                <li><strong>Access Point Security:</strong> Secure wireless access point configurations</li>
+                                <li><strong>Regular Audits:</strong> Perform periodic wireless security assessments</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-mobile-alt"></i> Mobile Device Security</h3>
+                            <p>Managing security for mobile devices accessing corporate networks requires comprehensive policies and controls.</p>
+                            
+                            <h4>Mobile Security Strategy:</h4>
+                            <ul>
+                                <li><strong>Device Management:</strong> Implement mobile device management (MDM) solutions</li>
+                                <li><strong>Application Control:</strong> Control which applications can be installed and used</li>
+                                <li><strong>Data Encryption:</strong> Ensure data is encrypted both at rest and in transit</li>
+                                <li><strong>Remote Wipe:</strong> Capability to remotely wipe lost or stolen devices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AdSense Ad Space -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5941869854528444"
+                 data-ad-slot="1234567898"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <section class="section bg-dark">
+            <div class="container">
+                <h2>Incident Response Planning</h2>
+                <div class="guide-content">
+                    <div class="guide-intro">
+                        <p>A well-prepared incident response plan is crucial for minimizing the impact of security incidents and ensuring rapid recovery.</p>
+                    </div>
+                    
+                    <div class="security-topics">
+                        <div class="topic">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Incident Response Framework</h3>
+                            <p>Establishing a structured approach to handling security incidents ensures consistent and effective response.</p>
+                            
+                            <h4>Response Phases:</h4>
+                            <ol>
+                                <li><strong>Preparation:</strong> Develop policies, procedures, and response capabilities</li>
+                                <li><strong>Detection and Analysis:</strong> Identify and assess security incidents</li>
+                                <li><strong>Containment:</strong> Limit the scope and impact of the incident</li>
+                                <li><strong>Eradication:</strong> Remove the threat from the environment</li>
+                                <li><strong>Recovery:</strong> Restore normal operations and monitor for residual effects</li>
+                                <li><strong>Lessons Learned:</strong> Analyze the incident and improve response procedures</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-users"></i> Response Team Organization</h3>
+                            <p>Organizing an effective incident response team with clearly defined roles and responsibilities.</p>
+                            
+                            <h4>Key Roles:</h4>
+                            <ul>
+                                <li><strong>Incident Commander:</strong> Overall incident management and decision-making</li>
+                                <li><strong>Technical Lead:</strong> Technical analysis and remediation activities</li>
+                                <li><strong>Communications Lead:</strong> Internal and external communications</li>
+                                <li><strong>Legal Counsel:</strong> Legal and regulatory compliance guidance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-clipboard-list"></i> Documentation and Reporting</h3>
+                            <p>Proper documentation is essential for legal compliance, lessons learned, and continuous improvement.</p>
+                            
+                            <h4>Documentation Requirements:</h4>
+                            <ul>
+                                <li><strong>Incident Timeline:</strong> Detailed chronology of events and response actions</li>
+                                <li><strong>Evidence Collection:</strong> Preservation of digital evidence for analysis</li>
+                                <li><strong>Impact Assessment:</strong> Analysis of business and technical impact</li>
+                                <li><strong>Remediation Actions:</strong> Steps taken to resolve the incident</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Compliance and Regulatory Considerations</h2>
+                <div class="guide-content">
+                    <div class="guide-intro">
+                        <p>Understanding and implementing compliance requirements is essential for organizations operating in regulated industries.</p>
+                    </div>
+                    
+                    <div class="compliance-grid">
+                        <div class="compliance-item">
+                            <h3><i class="fas fa-balance-scale"></i> GDPR Compliance</h3>
+                            <p>General Data Protection Regulation requirements for organizations handling EU personal data.</p>
+                            <ul>
+                                <li>Data protection impact assessments</li>
+                                <li>Privacy by design implementation</li>
+                                <li>Breach notification procedures</li>
+                                <li>Data subject rights management</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="compliance-item">
+                            <h3><i class="fas fa-hospital"></i> HIPAA Security</h3>
+                            <p>Healthcare organizations must implement specific security controls for protected health information.</p>
+                            <ul>
+                                <li>Administrative safeguards</li>
+                                <li>Physical safeguards</li>
+                                <li>Technical safeguards</li>
+                                <li>Regular risk assessments</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="compliance-item">
+                            <h3><i class="fas fa-credit-card"></i> PCI DSS</h3>
+                            <p>Payment Card Industry Data Security Standard for organizations handling credit card data.</p>
+                            <ul>
+                                <li>Network security controls</li>
+                                <li>Cardholder data protection</li>
+                                <li>Access control measures</li>
+                                <li>Regular security testing</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="compliance-item">
+                            <h3><i class="fas fa-building"></i> SOX Compliance</h3>
+                            <p>Sarbanes-Oxley Act requirements for public companies' financial reporting systems.</p>
+                            <ul>
+                                <li>Internal controls assessment</li>
+                                <li>IT general controls</li>
+                                <li>Change management processes</li>
+                                <li>Access control documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bjorn Cyber Viking</h3>
+                    <p>Empowering cybersecurity professionals with knowledge and tools for effective security management.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Security Resources</h3>
+                    <ul>
+                        <li><a href="security-guides.html">Security Guides</a></li>
+                        <li><a href="tutorials.html">Learning Tutorials</a></li>
+                        <li><a href="resources.html">3D Models & Hardware</a></li>
+                        <li><a href="#">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Tools & Resources</h3>
+                    <ul>
+                        <li><a href="index.html#installation">Bjorn Installation</a></li>
+                        <li><a href="https://github.com/infinition/Bjorn">GitHub Repository</a></li>
+                        <li><a href="resources.html">Download Case Models</a></li>
+                        <li><a href="#">API Reference</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Community & Support</h3>
+                    <ul>
+                        <li><a href="https://discord.gg/nHHVt5hPer">Discord Community</a></li>
+                        <li><a href="https://www.reddit.com/r/Bjorn_CyberViking/">Reddit Forum</a></li>
+                        <li><a href="#">Professional Support</a></li>
+                        <li><a href="#">Training Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bjorn Cyber Viking. All rights reserved. This content is for educational and authorized security testing purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

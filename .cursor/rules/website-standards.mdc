@@ -1,0 +1,9 @@
+---
+description: When making changes to the website, such as updating a path, link, new page, any new addition or removal, then read this rule
+globs: 
+alwaysApply: false
+---
+make sure we are updateing the sitemap.xml and robots.txt when adding/removing new pages.
+ensure consitency and do not duplicate information, before you add something, ensure it's not already added.
+
+ensure this website follows the rules of google adsense. We are trying to monotize it.
