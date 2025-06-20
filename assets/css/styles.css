@@ -390,25 +390,29 @@ body {
 }
 
 .code-block {
-    background: #1a1a1a;
+    background: #000000;
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1rem 0;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #00ff41;
+    border: 1px solid #333333;
     overflow-x: auto;
     max-width: 100%;
     box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .code-block pre {
-    color: #00ff00;
+    color: #00ff41;
     font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 500;
     white-space: pre-wrap;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    text-shadow: 0 0 2px rgba(0, 255, 65, 0.3);
 }
 
 /* Tutorial Content */
@@ -2101,8 +2105,9 @@ footer {
 }
 
 .concept-text span {
-    color: #cccccc;
+    color: #e6e6e6;
     font-size: 0.9rem;
+    font-weight: 400;
 }
 
 /* Command Examples */
@@ -2162,8 +2167,9 @@ footer {
 }
 
 .scan-info p {
-    color: #cccccc;
+    color: #e6e6e6;
     font-size: 0.9rem;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -2203,8 +2209,9 @@ footer {
 }
 
 .step-content p {
-    color: #cccccc;
+    color: #e6e6e6;
     font-size: 0.9rem;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -2248,8 +2255,9 @@ footer {
 }
 
 .vuln-info p {
-    color: #cccccc;
+    color: #e6e6e6;
     font-size: 0.9rem;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -2277,8 +2285,9 @@ footer {
 }
 
 .feature-item span {
-    color: #cccccc;
+    color: #e6e6e6;
     font-size: 0.9rem;
+    font-weight: 400;
 }
 
 /* Warning Notice */
