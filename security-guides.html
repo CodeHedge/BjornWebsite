@@ -203,23 +203,71 @@ sudo systemctl restart ssh</code></pre>
 
         <section class="section">
             <div class="container">
-                <h2>Hardware Security Considerations</h2>
+                <h2>Advanced Network Security Techniques</h2>
                 <div class="guide-content">
                     <div class="guide-intro">
-                        <p>Physical security and hardware protection are often overlooked but critical components of a comprehensive security strategy. For devices like Bjorn, proper enclosures and physical security measures are essential.</p>
+                        <p>Advanced network security requires sophisticated techniques and tools. Learn how to implement enterprise-grade security controls and detection mechanisms.</p>
                     </div>
                     
                     <div class="security-topics">
                         <div class="topic">
-                            <h3><i class="fas fa-cube"></i> Physical Enclosures</h3>
-                            <p>Protecting cybersecurity devices with proper physical enclosures prevents tampering and environmental damage.</p>
+                            <h3><i class="fas fa-network-wired"></i> Network Segmentation Strategies</h3>
+                            <p>Effective network segmentation is crucial for limiting attack surface and containing security breaches.</p>
                             
-                            <h4>Benefits of Custom Cases:</h4>
+                            <h4>Segmentation Approaches:</h4>
                             <ul>
-                                <li><strong>Tamper Protection:</strong> Prevent unauthorized physical access to components</li>
-                                <li><strong>Environmental Shield:</strong> Protect against dust, moisture, and temperature extremes</li>
-                                <li><strong>Professional Deployment:</strong> Enable clean installation in professional environments</li>
-                                <li><strong>Signal Integrity:</strong> Maintain proper electromagnetic shielding</li>
+                                <li><strong>VLAN Segmentation:</strong> Logical separation using virtual LANs</li>
+                                <li><strong>Subnet Isolation:</strong> Physical network separation with routing controls</li>
+                                <li><strong>Micro-segmentation:</strong> Application-level network controls</li>
+                                <li><strong>Zero Trust Networks:</strong> Never trust, always verify architecture</li>
+                            </ul>
+                            
+                            <div class="code-block">
+                                <pre><code># Configure VLAN segmentation example
+# Create VLANs for different security zones
+vlan 10
+ name MANAGEMENT
+vlan 20
+ name USERS
+vlan 30
+ name SERVERS
+vlan 99
+ name DMZ
+
+# Configure access control between VLANs
+access-list 101 deny ip 20.0.0.0 0.0.255.255 30.0.0.0 0.0.255.255
+access-list 101 permit ip any any</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-shield-virus"></i> Advanced Threat Detection</h3>
+                            <p>Modern threat detection requires behavioral analysis and machine learning approaches to identify sophisticated attacks.</p>
+                            
+                            <h4>Detection Technologies:</h4>
+                            <ul>
+                                <li><strong>Behavioral Analytics:</strong> Detect anomalous user and system behavior</li>
+                                <li><strong>Threat Intelligence:</strong> Leverage external threat feeds and indicators</li>
+                                <li><strong>Sandboxing:</strong> Analyze suspicious files in isolated environments</li>
+                                <li><strong>Network Traffic Analysis:</strong> Deep packet inspection and flow analysis</li>
+                            </ul>
+                            
+                            <div class="info-box">
+                                <h4><i class="fas fa-lightbulb"></i> Bjorn Integration</h4>
+                                <p>Bjorn can be integrated into your threat detection strategy as a network sensor, providing continuous monitoring and automated scanning capabilities for your security operations center.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-cube"></i> Hardware Security & Physical Protection</h3>
+                            <p>Physical security and hardware protection are critical components often overlooked in cybersecurity strategies.</p>
+                            
+                            <h4>Physical Security Controls:</h4>
+                            <ul>
+                                <li><strong>Tamper-Evident Enclosures:</strong> Detect unauthorized physical access</li>
+                                <li><strong>Environmental Monitoring:</strong> Temperature, humidity, and vibration sensors</li>
+                                <li><strong>Secure Boot Processes:</strong> Verify hardware and firmware integrity</li>
+                                <li><strong>Hardware Security Modules:</strong> Dedicated cryptographic processors</li>
                             </ul>
                             
                             <div class="info-box">
@@ -227,30 +275,69 @@ sudo systemctl restart ssh</code></pre>
                                 <p>The custom 3D-printed Bjorn case provides optimal protection while maintaining access to all necessary ports and the e-Paper display. <a href="resources.html">Download the 3D models</a> to print your own professional enclosure.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-dark">
+            <div class="container">
+                <h2>Wireless Security & Mobile Device Management</h2>
+                <div class="guide-content">
+                    <div class="guide-intro">
+                        <p>Wireless networks and mobile devices present unique security challenges requiring specialized assessment techniques and comprehensive management strategies.</p>
+                    </div>
+                    
+                    <div class="security-topics">
+                        <div class="topic">
+                            <h3><i class="fas fa-wifi"></i> Enterprise Wireless Security</h3>
+                            <p>Securing enterprise wireless networks requires multiple layers of protection and continuous monitoring.</p>
+                            
+                            <h4>Advanced Wireless Security:</h4>
+                            <ul>
+                                <li><strong>WPA3 Enterprise:</strong> Latest wireless security standard with enhanced encryption</li>
+                                <li><strong>Certificate-Based Authentication:</strong> 802.1X with digital certificates</li>
+                                <li><strong>Wireless Intrusion Detection:</strong> Monitor for rogue access points and attacks</li>
+                                <li><strong>Network Access Control:</strong> Device compliance and health checking</li>
+                            </ul>
+                            
+                            <div class="code-block">
+                                <pre><code># Configure WPA3 Enterprise with RADIUS
+# Example Cisco wireless configuration
+wlan security wpa wpa3
+wlan security wpa akm 802.1x
+wlan security 802.1x authentication-server radius-server-group
+wlan security 802.1x accounting-server radius-server-group
+
+# Enable wireless intrusion detection
+wireless intrusion-detection enabled
+wireless intrusion-detection signature-matching</code></pre>
+                            </div>
+                        </div>
                         
                         <div class="topic">
-                            <h3><i class="fas fa-wifi"></i> Wireless Security Assessment</h3>
-                            <p>Wireless networks present unique security challenges that require specialized assessment techniques and security measures.</p>
+                            <h3><i class="fas fa-mobile-alt"></i> Mobile Device Management (MDM)</h3>
+                            <p>Comprehensive mobile device management ensures security while enabling productivity in BYOD environments.</p>
                             
-                            <h4>Security Recommendations:</h4>
+                            <h4>MDM Security Features:</h4>
                             <ul>
-                                <li><strong>Strong Encryption:</strong> Use WPA3 or WPA2 with strong passphrases</li>
-                                <li><strong>Network Segmentation:</strong> Separate wireless traffic from critical network segments</li>
-                                <li><strong>Access Point Security:</strong> Secure wireless access point configurations</li>
-                                <li><strong>Regular Audits:</strong> Perform periodic wireless security assessments</li>
+                                <li><strong>Device Enrollment:</strong> Automated device registration and configuration</li>
+                                <li><strong>Application Management:</strong> Control app installation and data access</li>
+                                <li><strong>Data Loss Prevention:</strong> Prevent unauthorized data sharing</li>
+                                <li><strong>Compliance Monitoring:</strong> Continuous device health and policy compliance</li>
                             </ul>
                         </div>
                         
                         <div class="topic">
-                            <h3><i class="fas fa-mobile-alt"></i> Mobile Device Security</h3>
-                            <p>Managing security for mobile devices accessing corporate networks requires comprehensive policies and controls.</p>
+                            <h3><i class="fas fa-satellite-dish"></i> IoT Security Considerations</h3>
+                            <p>Internet of Things devices require specialized security approaches due to their unique constraints and deployment scenarios.</p>
                             
-                            <h4>Mobile Security Strategy:</h4>
+                            <h4>IoT Security Framework:</h4>
                             <ul>
-                                <li><strong>Device Management:</strong> Implement mobile device management (MDM) solutions</li>
-                                <li><strong>Application Control:</strong> Control which applications can be installed and used</li>
-                                <li><strong>Data Encryption:</strong> Ensure data is encrypted both at rest and in transit</li>
-                                <li><strong>Remote Wipe:</strong> Capability to remotely wipe lost or stolen devices</li>
+                                <li><strong>Device Identity:</strong> Unique device identification and authentication</li>
+                                <li><strong>Secure Communication:</strong> Encrypted data transmission protocols</li>
+                                <li><strong>Update Management:</strong> Secure firmware and software update mechanisms</li>
+                                <li><strong>Network Isolation:</strong> Segregate IoT devices from critical networks</li>
                             </ul>
                         </div>
                     </div>
@@ -326,6 +413,74 @@ sudo systemctl restart ssh</code></pre>
         </section>
 
         <section class="section">
+            <div class="container">
+                <h2>Security Operations & Threat Hunting</h2>
+                <div class="guide-content">
+                    <div class="guide-intro">
+                        <p>Modern security operations require proactive threat hunting and comprehensive security orchestration to defend against advanced persistent threats.</p>
+                    </div>
+                    
+                    <div class="security-topics">
+                        <div class="topic">
+                            <h3><i class="fas fa-search"></i> Threat Hunting Methodologies</h3>
+                            <p>Proactive threat hunting helps identify advanced threats that evade traditional security controls.</p>
+                            
+                            <h4>Hunting Frameworks:</h4>
+                            <ul>
+                                <li><strong>Hypothesis-Driven Hunting:</strong> Based on threat intelligence and attack patterns</li>
+                                <li><strong>Baseline Anomaly Detection:</strong> Identify deviations from normal behavior</li>
+                                <li><strong>Crown Jewel Analysis:</strong> Focus on protecting critical assets</li>
+                                <li><strong>Kill Chain Analysis:</strong> Map attacks to MITRE ATT&CK framework</li>
+                            </ul>
+                            
+                            <div class="code-block">
+                                <pre><code># Example threat hunting queries
+# PowerShell execution monitoring
+index=windows EventCode=4688 | where ProcessName contains "powershell.exe"
+| stats count by ComputerName, User, CommandLine
+
+# Suspicious network connections
+index=network | where dest_port in (443,80,8080,8443)
+| stats count by src_ip, dest_ip, dest_port
+| where count > 1000
+
+# Unusual authentication patterns
+index=security EventCode=4624 | eval hour=strftime(_time,"%H")
+| stats count by user, hour | where hour<6 OR hour>22</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-robot"></i> Security Orchestration & Automation</h3>
+                            <p>SOAR platforms enable automated response to security incidents and streamline security operations.</p>
+                            
+                            <h4>Automation Capabilities:</h4>
+                            <ul>
+                                <li><strong>Incident Triage:</strong> Automatically classify and prioritize security alerts</li>
+                                <li><strong>Threat Intelligence:</strong> Enrich alerts with contextual threat data</li>
+                                <li><strong>Response Playbooks:</strong> Standardized automated response procedures</li>
+                                <li><strong>Case Management:</strong> Track incidents through resolution lifecycle</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="topic">
+                            <h3><i class="fas fa-chart-line"></i> Security Metrics & KPIs</h3>
+                            <p>Effective security programs require measurable metrics to demonstrate value and identify improvement areas.</p>
+                            
+                            <h4>Key Security Metrics:</h4>
+                            <ul>
+                                <li><strong>Mean Time to Detection (MTTD):</strong> Speed of threat identification</li>
+                                <li><strong>Mean Time to Response (MTTR):</strong> Speed of incident response</li>
+                                <li><strong>False Positive Rate:</strong> Accuracy of security alerting</li>
+                                <li><strong>Security Coverage:</strong> Percentage of assets under monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-dark">
             <div class="container">
                 <h2>Compliance and Regulatory Considerations</h2>
                 <div class="guide-content">
