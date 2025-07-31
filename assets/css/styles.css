@@ -51,16 +51,22 @@
 .about-content {
     max-width: 800px;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 .about-intro {
     text-align: center;
     margin-bottom: 3rem;
+    color: #ffffff;
 }
 
 .about-intro h2 {
     color: #007bff;
     margin-bottom: 1rem;
+}
+
+.about-intro p {
+    color: #ffffff;
 }
 
 .team-section {
@@ -86,6 +92,10 @@
     margin-bottom: 1rem;
 }
 
+.member-info p {
+    color: #ffffff;
+}
+
 .member-details {
     margin-top: 1.5rem;
 }
@@ -107,7 +117,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .mission-item {
@@ -129,45 +139,57 @@
     margin-bottom: 1rem;
 }
 
+.mission-item p {
+    color: #ffffff;
+}
+
 .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .value-item {
-    padding: 1.5rem;
+    padding: 2rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    border-left: 4px solid #007bff;
+    border: 1px solid rgba(0, 123, 255, 0.2);
 }
 
 .value-item h3 {
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
+.value-item h3 i {
+    color: #007bff;
+}
+
+.value-item p {
+    color: #ffffff;
+}
+
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
 .contact-method {
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     border: 1px solid rgba(0, 123, 255, 0.2);
 }
 
 .contact-method i {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #007bff;
     margin-bottom: 1rem;
 }
@@ -183,18 +205,26 @@
 }
 
 .contact-method a:hover {
-    text-decoration: underline;
+    color: #0056b3;
+}
+
+.contact-method small {
+    color: #ccc;
+    display: block;
+    margin-top: 0.5rem;
 }
 
 /* Contact Us Page Styles */
 .contact-content {
     max-width: 800px;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 .contact-intro {
     text-align: center;
     margin-bottom: 3rem;
+    color: #ffffff;
 }
 
 .contact-intro h2 {
@@ -202,9 +232,13 @@
     margin-bottom: 1rem;
 }
 
+.contact-intro p {
+    color: #ffffff;
+}
+
 .contact-methods-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -218,7 +252,7 @@
 }
 
 .method-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #007bff;
     margin-bottom: 1rem;
 }
@@ -229,62 +263,77 @@
 }
 
 .contact-method-card p {
-    color: #ccc;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .contact-link {
-    color: #007bff;
-    text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-    text-decoration: underline;
+    color: #0056b3;
+}
+
+.contact-method-card small {
+    color: #ccc;
+    display: block;
+    margin-top: 0.5rem;
 }
 
 .help-topics {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .help-topic {
-    padding: 1.5rem;
+    padding: 2rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    border-left: 4px solid #007bff;
+    border: 1px solid rgba(0, 123, 255, 0.2);
 }
 
 .help-topic h3 {
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
+.help-topic h3 i {
+    color: #007bff;
+}
+
+.help-topic p {
+    color: #ffffff;
+}
+
 .response-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .response-item {
-    text-align: center;
-    padding: 1.5rem;
+    padding: 2rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     border: 1px solid rgba(0, 123, 255, 0.2);
+    text-align: center;
 }
 
 .response-item h3 {
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -292,8 +341,16 @@
     gap: 0.5rem;
 }
 
+.response-item h3 i {
+    color: #007bff;
+}
+
+.response-item p {
+    color: #ffffff;
+}
+
 .guidelines-list {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .guideline-item {
@@ -304,7 +361,7 @@
     padding: 1rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
-    border-left: 4px solid #007bff;
+    border: 1px solid rgba(0, 123, 255, 0.2);
 }
 
 .guideline-item i {
@@ -313,10 +370,15 @@
     width: 20px;
 }
 
+.guideline-item span {
+    color: #ffffff;
+}
+
 /* Privacy Policy Page Styles */
 .privacy-content {
     max-width: 800px;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 .privacy-intro {
@@ -326,6 +388,7 @@
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     border: 1px solid rgba(0, 123, 255, 0.2);
+    color: #ffffff;
 }
 
 .policy-section {
@@ -346,126 +409,138 @@
 .policy-section h3 {
     color: #ffffff;
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    margin-top: 2rem;
 }
 
 .policy-section h4 {
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.policy-section p {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .info-types {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .info-type {
     padding: 1.5rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 8px;
-    border-left: 4px solid #007bff;
+    border: 1px solid rgba(0, 123, 255, 0.1);
 }
 
 .info-type h3 {
     color: #007bff;
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
 }
 
 .info-type ul {
-    margin-top: 1rem;
-    padding-left: 1.5rem;
+    list-style: none;
+    padding: 0;
 }
 
 .info-type li {
+    color: #ffffff;
     margin-bottom: 0.5rem;
-    color: #ccc;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.info-type li::before {
+    content: '•';
+    color: #007bff;
+    position: absolute;
+    left: 0;
 }
 
 .usage-purposes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .purpose-item {
     padding: 1.5rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 8px;
-    border-left: 4px solid #007bff;
+    border: 1px solid rgba(0, 123, 255, 0.1);
+    margin-bottom: 1rem;
 }
 
 .purpose-item h3 {
     color: #007bff;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.purpose-item p {
+    color: #ffffff;
+    margin: 0;
 }
 
 .cookie-types {
     display: grid;
-    gap: 1.5rem;
-    margin: 1.5rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .cookie-type {
     padding: 1.5rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 8px;
-    border-left: 4px solid #007bff;
+    border: 1px solid rgba(0, 123, 255, 0.1);
 }
 
 .cookie-type h4 {
     color: #007bff;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cookie-type p {
+    color: #ffffff;
+    margin: 0;
 }
 
 .third-party-info h3 {
     color: #007bff;
     margin-bottom: 1rem;
-    margin-top: 2rem;
 }
 
 .user-rights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .right-item {
     padding: 1.5rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 8px;
-    border-left: 4px solid #007bff;
-    text-align: center;
+    border: 1px solid rgba(0, 123, 255, 0.1);
+    margin-bottom: 1rem;
 }
 
 .right-item h3 {
     color: #007bff;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.right-item p {
+    color: #ffffff;
+    margin: 0;
 }
 
 .contact-info {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .contact-info p {
-    margin-bottom: 0.5rem;
+    color: #ffffff;
 }
 
 .contact-info a {
@@ -474,13 +549,14 @@
 }
 
 .contact-info a:hover {
-    text-decoration: underline;
+    color: #0056b3;
 }
 
 /* Terms of Service Page Styles */
 .terms-content {
     max-width: 800px;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 .terms-intro {
@@ -490,6 +566,7 @@
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     border: 1px solid rgba(0, 123, 255, 0.2);
+    color: #ffffff;
 }
 
 .terms-section {
@@ -510,44 +587,63 @@
 .terms-section h3 {
     color: #ffffff;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 .license-info h3 {
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .license-info ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
+    list-style: none;
+    padding: 0;
 }
 
 .license-info li {
+    color: #ffffff;
     margin-bottom: 0.5rem;
-    color: #ccc;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.license-info li::before {
+    content: '•';
+    color: #007bff;
+    position: absolute;
+    left: 0;
 }
 
 .acceptable-use h3 {
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .acceptable-use ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
+    list-style: none;
+    padding: 0;
 }
 
 .acceptable-use li {
+    color: #ffffff;
     margin-bottom: 0.5rem;
-    color: #ccc;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.acceptable-use li::before {
+    content: '•';
+    color: #007bff;
+    position: absolute;
+    left: 0;
 }
 
 .security-usage {
+    margin-top: 2rem;
+    padding: 2rem;
     background: rgba(255, 0, 0, 0.1);
-    border: 1px solid rgba(255, 0, 0, 0.3);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem 0;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 0, 0, 0.3);
 }
 
 .security-usage h3 {
@@ -556,19 +652,29 @@
 }
 
 .security-usage ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
+    list-style: none;
+    padding: 0;
 }
 
 .security-usage li {
+    color: #ffffff;
     margin-bottom: 0.5rem;
-    color: #ccc;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.security-usage li::before {
+    content: '⚠';
+    color: #ff4444;
+    position: absolute;
+    left: 0;
 }
 
 /* Disclaimer Page Styles */
 .disclaimer-content {
     max-width: 800px;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 .disclaimer-intro {
@@ -578,6 +684,7 @@
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     border: 1px solid rgba(0, 123, 255, 0.2);
+    color: #ffffff;
 }
 
 .disclaimer-section {
@@ -598,25 +705,27 @@
 .disclaimer-section h3 {
     color: #ffffff;
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    margin-top: 2rem;
 }
 
 .disclaimer-section h4 {
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.disclaimer-section p {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .security-disclaimer {
+    margin-top: 2rem;
+    padding: 2rem;
     background: rgba(255, 0, 0, 0.1);
-    border: 1px solid rgba(255, 0, 0, 0.3);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem 0;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 0, 0, 0.3);
 }
 
 .security-disclaimer h3 {
@@ -625,55 +734,66 @@
 }
 
 .warning-points {
-    display: grid;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .warning-point {
     padding: 1.5rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 0, 0, 0.05);
     border-radius: 8px;
-    border-left: 4px solid #ff4444;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    margin-bottom: 1rem;
 }
 
 .warning-point h4 {
     color: #ff4444;
     margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+}
+
+.warning-point p {
+    color: #ffffff;
+    margin: 0;
 }
 
 .disclaimer-section ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
+    list-style: none;
+    padding: 0;
 }
 
 .disclaimer-section li {
+    color: #ffffff;
     margin-bottom: 0.5rem;
-    color: #ccc;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.disclaimer-section li::before {
+    content: '•';
+    color: #007bff;
+    position: absolute;
+    left: 0;
 }
 
 .disclaimer-notice {
-    background: rgba(255, 0, 0, 0.1);
-    border: 2px solid rgba(255, 0, 0, 0.3);
-    border-radius: 10px;
+    margin-top: 2rem;
     padding: 2rem;
-    margin-top: 3rem;
+    background: rgba(255, 193, 7, 0.1);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 193, 7, 0.3);
 }
 
 .final-warning {
-    text-align: center;
+    margin-top: 2rem;
 }
 
 .final-warning p {
-    margin-bottom: 1rem;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .final-warning p:first-child {
-    font-size: 1.1rem;
     color: #ff4444;
+    font-size: 1.1rem;
 }
 
 /* Mobile Responsive Styles for New Pages */
