@@ -7,6 +7,36 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://bjorncyberviking.com/about.html</loc>
+        <lastmod>2024-12-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://bjorncyberviking.com/contact.html</loc>
+        <lastmod>2024-12-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://bjorncyberviking.com/privacy.html</loc>
+        <lastmod>2024-12-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://bjorncyberviking.com/terms.html</loc>
+        <lastmod>2024-12-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://bjorncyberviking.com/disclaimer.html</loc>
+        <lastmod>2024-12-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://bjorncyberviking.com/tutorials.html</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>weekly</changefreq>

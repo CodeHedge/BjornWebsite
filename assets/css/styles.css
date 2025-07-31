@@ -5,6 +5,751 @@
     box-sizing: border-box;
 }
 
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(5, 15, 19, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #007bff;
+    z-index: 10000;
+    display: none;
+    padding: 1rem 0;
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cookie-content p {
+    color: #ffffff;
+    margin: 0;
+    flex: 1;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.cookie-buttons .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+/* About Us Page Styles */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-intro h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.team-section {
+    margin-bottom: 3rem;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.member-info h3 {
+    color: #007bff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-title {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.member-details {
+    margin-top: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.detail-item i {
+    color: #007bff;
+    width: 20px;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.mission-item {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.mission-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.mission-item h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.value-item {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border-left: 4px solid #007bff;
+}
+
+.value-item h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-method {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.contact-method i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.contact-method h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.contact-method a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Us Page Styles */
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-intro h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.contact-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-method-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    text-align: center;
+}
+
+.method-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.contact-method-card h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.contact-method-card p {
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.help-topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.help-topic {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border-left: 4px solid #007bff;
+}
+
+.help-topic h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.response-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.response-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.response-item h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.guidelines-list {
+    margin-top: 1.5rem;
+}
+
+.guideline-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.guideline-item i {
+    color: #007bff;
+    font-size: 1.2rem;
+    width: 20px;
+}
+
+/* Privacy Policy Page Styles */
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.policy-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.policy-section h2 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+}
+
+.policy-section h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.policy-section h4 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-types {
+    display: grid;
+    gap: 2rem;
+}
+
+.info-type {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.info-type h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-type ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.info-type li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.usage-purposes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.purpose-item {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.purpose-item h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cookie-types {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.cookie-type {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.cookie-type h4 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.third-party-info h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.user-rights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.right-item {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+    text-align: center;
+}
+
+.right-item h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Terms of Service Page Styles */
+.terms-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.terms-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.terms-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.terms-section h2 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+}
+
+.terms-section h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.license-info h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.license-info ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.license-info li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.acceptable-use h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.acceptable-use ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.acceptable-use li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.security-usage {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.security-usage h3 {
+    color: #ff4444;
+    margin-bottom: 1rem;
+}
+
+.security-usage ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.security-usage li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+/* Disclaimer Page Styles */
+.disclaimer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.disclaimer-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.disclaimer-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.disclaimer-section h2 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+}
+
+.disclaimer-section h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.disclaimer-section h4 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.security-disclaimer {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.security-disclaimer h3 {
+    color: #ff4444;
+    margin-bottom: 1rem;
+}
+
+.warning-points {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.warning-point {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #ff4444;
+}
+
+.warning-point h4 {
+    color: #ff4444;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.disclaimer-section ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.disclaimer-section li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.disclaimer-notice {
+    background: rgba(255, 0, 0, 0.1);
+    border: 2px solid rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.final-warning {
+    text-align: center;
+}
+
+.final-warning p {
+    margin-bottom: 1rem;
+}
+
+.final-warning p:first-child {
+    font-size: 1.1rem;
+    color: #ff4444;
+}
+
+/* Mobile Responsive Styles for New Pages */
+@media (max-width: 768px) {
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cookie-buttons {
+        justify-content: center;
+    }
+    
+    .mission-grid,
+    .values-grid,
+    .contact-methods,
+    .contact-methods-grid,
+    .help-topics,
+    .response-info,
+    .usage-purposes,
+    .user-rights {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-member,
+    .contact-method-card,
+    .response-item,
+    .contact-method {
+        padding: 1.5rem;
+    }
+    
+    .policy-section,
+    .terms-section,
+    .disclaimer-section {
+        padding: 1.5rem;
+    }
+    
+    .info-type,
+    .purpose-item,
+    .cookie-type,
+    .right-item,
+    .warning-point {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-content {
+        padding: 0 15px;
+    }
+    
+    .cookie-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cookie-buttons .btn {
+        width: 100%;
+    }
+    
+    .member-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .mission-icon,
+    .method-icon {
+        font-size: 2rem;
+    }
+    
+    .policy-section,
+    .terms-section,
+    .disclaimer-section {
+        padding: 1rem;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
